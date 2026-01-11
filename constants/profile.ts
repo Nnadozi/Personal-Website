@@ -1,7 +1,7 @@
 export const PROFILE = {
   fullName: "Chikaosolu Nnadozie",
   about:
-    "I'm a freshman at Case Western Reserve University (CWRU) double majoring in CS & Data Science. I enjoy software engineering and cross-platform mobile app development.",
+    "I'm a freshman at Case Western Reserve University (CWRU) double majoring in CS & Electrical Engineering. I enjoy software engineering and cross-platform mobile app development.",
   avatar: require("../assets/images/photo.webp"),
   links: {
     github: "https://github.com/Nnadozi",

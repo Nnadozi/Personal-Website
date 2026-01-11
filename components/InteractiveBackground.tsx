@@ -31,7 +31,7 @@ export function InteractiveBackground({ theme }: { theme: Theme }) {
       const ctx = canvas?.getContext("2d");
       if (!canvas || !ctx) return;
 
-      timeRef.current += 0.01;
+      timeRef.current += 0.012;
 
       ctx.fillStyle = theme === "light" ? "#FFFFFF" : "#0F172A";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -46,8 +46,8 @@ export function InteractiveBackground({ theme }: { theme: Theme }) {
         const waveFrequency = 0.003 + i * 0.002;
 
         const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        const alpha1 = theme === "light" ? 0.15 : 0.25;
-        const alpha2 = theme === "light" ? 0.08 : 0.15;
+        const alpha1 = theme === "light" ? 0.12 : 0.2;
+        const alpha2 = theme === "light" ? 0.06 : 0.12;
 
         gradient.addColorStop(0, `rgba(${baseColor.r},${baseColor.g},${baseColor.b},${alpha1})`);
         gradient.addColorStop(0.5, `rgba(${baseColor.r + 30},${baseColor.g + 20},${baseColor.b + 10},${alpha2})`);
